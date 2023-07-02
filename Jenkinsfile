@@ -7,7 +7,6 @@ pipeline {
         stage('Git checkout') {
            steps{
                 git branch: 'main', credentialsId: 'sravanth', https://github.com/sravanth-12/terraformAzure.git'
-            }
         }
     }
         stage('terraform format check') {
@@ -26,3 +25,4 @@ pipeline {
             }
         }
     }
+}
